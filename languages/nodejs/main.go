@@ -12,9 +12,9 @@ import (
 )
 
 func findHelper(path string) string {
-	bytes, err := File(path + ".js")
+	bytes, err := File(path + ".rag")
 	if bytes != nil {
-		f, err := ioutil.TempFile("", "prybar-nodejs-*.js")
+		f, err := ioutil.TempFile("", "prybar-ragolation-*.rag")
 		if err != nil {
 			panic(err)
 		}
